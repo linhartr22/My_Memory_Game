@@ -1,7 +1,7 @@
 /// @description Show Music Button.
-// Draw empty button sprite.
+// Draw button base.
 draw_self();
 
-// Draw play/mute sprite.
-draw_sprite(spr_button_mute, play_music, x, y - (sprite_height * 0.05));
+// Draw button sprite.
+draw_sprite(button_sprite, global.play_music, x, y - (sprite_height * 0.05));	// Ignore feather.
 

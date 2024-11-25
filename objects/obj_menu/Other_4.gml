@@ -1,27 +1,10 @@
-/// @description Menu Setup.
-// Get audio volume.
-//global.audio_volume = audio_get_master_gain(0);
-global.audio_volume = 0.5;
-audio_set_master_gain(0, global.audio_volume);
-
+/// @description Room Start Event.
+show_debug_message("Menu Obj Room Start");
 // Play menu music.
-audio_play_sound(snd_music_menu, 0, true);
-
-// Score.
-score = 0;
-
-// Locked levels.
-global.locked_level = [false, true, true, true, true, true];
-
-// Locked stages.
-global.locked_stages = [
-	[false, true, true, true],	// level 1
-	[true, true, true, true],	// level 2
-	[true, true, true, true],	// level 3
-	[true, true, true, true],	// level 4
-	[true, true, true, true],	// level 5
-	[true, true, true, true]	// level 6	
-]
+global.music = snd_music_menu
+if (global.play_music) {
+	audio_play_sound(global.music, 0 , true);
+}
 
 // Level buttons.
 #macro LVL_BTN_OFS_X 0
@@ -41,3 +24,4 @@ for (var _row = 0; _row < LVL_BTN_ROWS; _row++) {
 		});
 	}
 }
+

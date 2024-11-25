@@ -1,4 +1,4 @@
 /// @description Music Button Mouse Left.
-// Music button not clicked.
+// Set button to not clicked.
 image_index = false;
 

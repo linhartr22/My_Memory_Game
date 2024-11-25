@@ -2,6 +2,6 @@
 // Disable sprite animation.
 image_speed = false;
 
-// Enable music.
-play_music = true;
+// Button sprite.
+button_sprite = spr_button_mute;
 

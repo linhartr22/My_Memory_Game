@@ -8,7 +8,7 @@ if (!global.button_disable) {
 		show_debug_message("Quit button disabled buttons.");
 	
 		// Stop music.
-		audio_stop_sound(snd_music_menu);
+		audio_stop_sound(global.music);
 	
 		// Play game exit sound. Wait for sound to end.
 		audio_play_sound(button_sound,0,false);

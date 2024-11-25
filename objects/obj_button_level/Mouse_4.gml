@@ -1,7 +1,7 @@
 /// @description Level Button Left Mouse Pressed.
-// Quit button pressed?
-if (!global.button_disable && !global.locked_level[level - 1]) {
-	// Set level button pressed.
+// Button pressed?
+if (!global.button_disable && !global.locked_levels[level - 1]) {
+	// Yes, Set button to pressed.
 	image_index = true;
 
 	// Play clicked sound.
