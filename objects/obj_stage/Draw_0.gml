@@ -7,5 +7,5 @@ draw_set_colour(c_white);
 draw_set_alpha(1);
 
 // Draw level text.
-draw_text(x, y, string("LEVEL: {0}\nSTAGE: ", global.game_level));
+draw_text(x, y, string("LEVEL: {0}\nSTAGE: {1}", global.game_level, global.game_stage));
 

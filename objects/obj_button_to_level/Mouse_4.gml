@@ -1,4 +1,4 @@
-/// @description Menu Button Left Mouse Pressed.
+/// @description To Level Button Left Mouse Pressed.
 // Set button to pressed.
 image_index = true;
 

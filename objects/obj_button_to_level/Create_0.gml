@@ -1,4 +1,4 @@
-/// @description Menu Button Setup.
+/// @description To Level Button Setup.
 // Disable sprite animation.
 image_speed = false;
 

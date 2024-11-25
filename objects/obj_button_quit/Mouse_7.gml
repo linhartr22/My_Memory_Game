@@ -1,7 +1,7 @@
 /// @description Quit Button Left Click Released.
 // Button disabled?
 if (!global.button_disable) {
-	// No, Quit button pressed?
+	// No, Was button pressed?
 	if (image_index) {
 		// Yes, Disable button clicks.
 		global.button_disable = true;

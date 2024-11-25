@@ -1,4 +1,5 @@
 /// @description Game Start Event.
+show_debug_message("Main menu game start event begin")
 // Set audio volume. 
 //global.audio_volume = audio_get_master_gain(0);
 global.audio_volume = 0.5;

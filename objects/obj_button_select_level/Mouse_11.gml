@@ -1,4 +1,4 @@
 /// @description Level Button Mouse Left.
-// Level button not clicked.
+// Set level button to not clicked.
 image_index = false;
 

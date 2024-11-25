@@ -1,5 +1,5 @@
 /// @description Room Start Event.
-show_debug_message("Level Obj Room Start");
+show_debug_message("Stage Select Begin");
 // Play game music.
 global.music = snd_music_level
 if (global.play_music) {
@@ -22,7 +22,7 @@ for (var _row = 0; _row < STG_BTN_ROWS; _row++) {
 	var _y = STG_BTN_OFS_Y + (_row * (sprite_get_height(spr_button_stage) + STG_BTN_SPC_Y));
 	for (var _col = 0; _col < STG_BTN_COLS; _col++) {
 		var _x = (room_width / 2) - (STG_BTN_SPC_X / 2) - (sprite_get_width(spr_button_stage) / 2) + (_col * (sprite_get_width(spr_button_stage) + STG_BTN_SPC_X));
-		instance_create_layer(_x, _y, "Instances", obj_button_stage, {
+		instance_create_layer(_x, _y, "Instances", obj_button_stage_select, {
 			stage : (_row *STG_BTN_COLS) + _col + 1
 		});
 	}

@@ -1,4 +1,4 @@
-/// @description Show Menu Button.
+/// @description Show To Level Button.
 // Draw button base.
 draw_self();
 
