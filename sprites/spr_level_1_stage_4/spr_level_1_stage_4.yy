@@ -23,7 +23,7 @@
   ],
   "name":"spr_level_1_stage_4",
   "nineSlice":null,
-  "origin":1,
+  "origin":4,
   "parent":{
     "name":"Level 1",
     "path":"folders/Sprites/Level 1.yy",
@@ -76,7 +76,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":160,
-    "yorigin":0,
+    "yorigin":120,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

@@ -6,7 +6,7 @@ global.audio_volume = 0.5;
 audio_set_master_gain(0, global.audio_volume);
 
 // Enable music.
-global.play_music = true;
+global.play_music = false;
 
 // Clear score.
 score = 0;
@@ -29,6 +29,8 @@ global.images = [
 	[spr_level_2_stage_1, spr_level_2_stage_2, spr_level_2_stage_3, spr_level_2_stage_4]
 ];
 
-
+// Puzzle difficulty. For more than 16 buttons total, add more sprites.
+global.puzzle_rows = 2;
+global.puzzle_cols = 3;
 	
 	
