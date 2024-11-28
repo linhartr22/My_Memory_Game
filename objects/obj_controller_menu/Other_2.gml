@@ -26,6 +26,8 @@ global.locked_stages = [
 
 global.images = [
 	[spr_level_1_stage_1, spr_level_1_stage_2, spr_level_1_stage_3, spr_level_1_stage_4],
-	[spr_level_2_stage_1, spr_level_2_stage_2, spr_level_2_stage_3, spr_level_2_stage_4]
+	[spr_level_2_stage_1, spr_level_2_stage_2, spr_level_2_stage_3, spr_level_2_stage_4],
+	[spr_level_3_stage_1, spr_level_3_stage_2, spr_level_3_stage_3, spr_level_3_stage_4],
+	[spr_level_4_stage_1, spr_level_4_stage_2, spr_level_4_stage_3, spr_level_4_stage_4]
 ];
 

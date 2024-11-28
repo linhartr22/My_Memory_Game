@@ -10,8 +10,8 @@ global.difficulty_levels = [
 ];
 
 // Set number of puzzle rows and columns.
-global.puzzle_rows = difficulty_levels[0].row;
-global.puzzle_cols = difficulty_levels[0].col;
+global.puzzle_rows = global.difficulty_levels[0].row;
+global.puzzle_cols = global.difficulty_levels[0].col;
 	
 // Puzzle Size.
 puzzle_width = 800;

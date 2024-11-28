@@ -9,8 +9,14 @@ draw_set_alpha(1);
 // Draw level text.
 draw_text(x, y, string("LEVEL: {0}\nSTAGE: {1}", global.game_level, global.game_stage));
 
+// Draw press first button hint.
 if (tiles_remaining == global.puzzle_rows * global.puzzle_cols) {
 	draw_text(x, y + 500, "Select a tile \nthen try to \nfind its \nmatch");
+}
+
+// Draw finished viewing hint.
+if (tiles_remaining == 0) {
+	draw_text(x, y + 500, "Press back \nwhen done \nviewing");
 }
 
 // Draw puzzle frame.
