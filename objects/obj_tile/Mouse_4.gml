@@ -11,13 +11,14 @@ if (image_index > 0) {
 	audio_play_sound(snd_button_error, 0, false);
 	exit
 } else {
-	// Play clicked sound.
-	audio_play_sound(snd_ui_click, 0, false);
 }
 
 // Set tile sprite to match.
 image_index = match + 2
 
+// Play clicked sound.
+audio_play_sound(snd_ui_click, 0, false);
+	
 // Has any tile been selected?
 if (!global.is_tile_selected) {
 	// No, Set tile is selected state.
@@ -27,8 +28,10 @@ if (!global.is_tile_selected) {
 	global.tile_to_match = match;
 	global.tile_to_match_id = id;
 } else {
-	// Yes, Delay to view results.
+	// Yes, Disable Buttons.
 	global.button_disable = true;
-	alarm_set(0, 60);
+	
+	// Delay to view result
+	alarm_set(0, 30);
 }
 
