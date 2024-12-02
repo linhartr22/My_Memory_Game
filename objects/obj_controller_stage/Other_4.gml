@@ -7,6 +7,9 @@ if (global.play_music) {
 	audio_play_sound(global.music, 0, true);
 }
 
+// Set difficulty.
+
+
 #region Set Matching Tiles
 // Set matching tiles.
 var _matches[];
