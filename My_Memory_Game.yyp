@@ -49,6 +49,7 @@
     {"id":{"name":"fnt_big_text","path":"fonts/fnt_big_text/fnt_big_text.yy",},},
     {"id":{"name":"fnt_button_text","path":"fonts/fnt_button_text/fnt_button_text.yy",},},
     {"id":{"name":"fnt_medium_text","path":"fonts/fnt_medium_text/fnt_medium_text.yy",},},
+    {"id":{"name":"Copyright","path":"notes/Copyright/Copyright.yy",},},
     {"id":{"name":"obj_button_music","path":"objects/obj_button_music/obj_button_music.yy",},},
     {"id":{"name":"obj_button_quit","path":"objects/obj_button_quit/obj_button_quit.yy",},},
     {"id":{"name":"obj_button_select_level","path":"objects/obj_button_select_level/obj_button_select_level.yy",},},
