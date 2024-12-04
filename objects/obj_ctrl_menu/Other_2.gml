@@ -51,3 +51,6 @@ global.images = [
 	[spr_level_6_stage_1, spr_level_6_stage_2, spr_level_6_stage_3, spr_level_6_stage_4]
 ];
 
+// Stage time limits.
+global.stage_time_limit = [20, 35, 50, 70];
+

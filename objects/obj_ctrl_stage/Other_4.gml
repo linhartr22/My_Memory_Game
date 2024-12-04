@@ -7,6 +7,10 @@ if (global.play_music) {
 	audio_sound_gain(global.music, 1, 500);
 }
 
+// Clear start timer state.
+global.timer_start = false;
+global.timer_count = global.stage_time_limit[global.game_stage - 1];
+
 #region Set Matching Tiles
 // Set matching tiles.
 var _matches[];
