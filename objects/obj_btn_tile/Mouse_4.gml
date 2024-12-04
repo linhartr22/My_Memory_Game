@@ -8,7 +8,7 @@ if (global.button_disable) {
 // Has this tile been selected?
 if (image_index > 0) {
 	// Yes, Play error sound
-	audio_play_sound(snd_button_error, 0, false);
+	audio_play_sound(snd_btn_error, 0, false);
 	exit
 } else {
 }

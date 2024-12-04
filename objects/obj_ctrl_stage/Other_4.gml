@@ -1,14 +1,11 @@
 /// @description Room Start Event.
-show_debug_message("Stage: Room Start");
-
 // Play game music.
-global.music = snd_music_level_1
+global.music = snd_music_stage
 if (global.play_music) {
 	audio_play_sound(global.music, 0, true);
+	audio_sound_gain(global.music, 0, 0);
+	audio_sound_gain(global.music, 1, 500);
 }
-
-// Set difficulty.
-
 
 #region Set Matching Tiles
 // Set matching tiles.

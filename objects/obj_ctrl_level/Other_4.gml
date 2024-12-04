@@ -3,6 +3,8 @@
 global.music = snd_music_level
 if (global.play_music) {
 	audio_play_sound(global.music, 0, true);
+	audio_sound_gain(global.music, 0, 0);
+	audio_sound_gain(global.music, 1, 500);
 }
 
 // Set stage select.

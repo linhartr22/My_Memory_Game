@@ -1,6 +1,4 @@
 /// @description Stage Setup.
-show_debug_message("Stage: Create");
-
 // Puzzle difficulty.
 global.difficulty_levels = [
 	{row : 2, col : 3}, 

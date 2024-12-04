@@ -1,10 +1,10 @@
 /// @description Menu Room Start Event.
-show_debug_message("Menu Room Start Event.");
-
 // Play menu music.
 global.music = snd_music_menu
 if (global.play_music) {
-	audio_play_sound(global.music, 0 , true);
+	audio_play_sound(global.music, 0, true);
+	audio_sound_gain(global.music, 0, 0);
+	audio_sound_gain(global.music, 1, 500);
 }
 
 // Level buttons.

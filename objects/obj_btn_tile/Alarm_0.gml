@@ -9,7 +9,7 @@ if (global.tile_to_match == match) {
 	// No, Set both tiles to not pressed.
 	image_index = false;
 	global.tile_to_match_id.image_index = false;
-	audio_play_sound(snd_button_error, 0, false);
+	audio_play_sound(snd_btn_error, 0, false);
 }
 	
 // Set tile is not selected state.

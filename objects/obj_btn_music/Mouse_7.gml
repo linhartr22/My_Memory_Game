@@ -5,11 +5,9 @@ if (image_index) {
 	if (global.play_music) {
 		// Yes, Disable music.
 		audio_stop_sound(global.music);
-		show_debug_message("Mute button disabled music.");
 	} else {
 		// Yes, Restore music.
 		audio_play_sound(global.music, 0, true);
-		show_debug_message("Mute button enabled music.");
 	}
 
 	// Toggle play music state.

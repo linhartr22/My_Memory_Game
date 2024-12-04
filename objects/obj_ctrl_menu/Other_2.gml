@@ -1,6 +1,4 @@
 /// @description Menu Game Start Event.
-show_debug_message("Menu Game Start Event.")
-
 // Set audio volume. 
 global.audio_volume = 0.5;
 audio_set_master_gain(0, global.audio_volume);
@@ -21,6 +19,7 @@ global.stages_cnt = 4;
 
 // Locked levels.
 global.locked_levels = [false, true, true, true, true, true];
+//global.locked_levels = [false, false, false, false, false, false];
 
 // Locked stages.
 global.locked_stages = [
@@ -31,6 +30,16 @@ global.locked_stages = [
 	[true, true, true, true],	// level 5
 	[true, true, true, true]	// level 6	
 ];
+/*
+global.locked_stages = [
+	[false, false, false, false],	// level 1
+	[false, false, false, false],	// level 2
+	[false, false, false, false],	// level 3
+	[false, false, false, false],	// level 4
+	[false, false, false, false],	// level 5
+	[false, false, false, false]	// level 6	
+];
+*/
 
 // Stage images.
 global.images = [

@@ -41,7 +41,8 @@ if (!global.locked_stages[global.game_level - 1, global.stages_cnt - 1] &&
 }
 
 // Next level unlocked?
-if (!global.locked_levels[global.game_level]) {
+if (global.game_level != global.levels_cnt &&
+	!global.locked_levels[global.game_level]) {
 	// Yes, Format hint text.
 	draw_set_font(fnt_button)
 	draw_set_halign(fa_left);
