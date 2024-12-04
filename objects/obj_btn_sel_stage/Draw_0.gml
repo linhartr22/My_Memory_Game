@@ -17,17 +17,18 @@ if (!image_index) {
 	// Draw lock icon.
 	draw_sprite(spr_icon_lock, 0, x, y + (sprite_height * 0.3));
 } else {
-	// Format button text.
-	draw_set_font(fnt_button);
-	draw_set_halign(fa_center);
-	draw_set_valign(fa_middle);
-	draw_set_colour(c_white);
-	draw_set_alpha(1);
-
-	// Draw button text.
-	draw_text(x, y - (sprite_height * 0.05), string("STAGE {0}", stage));
-	
 	// Draw lock icon.
 	draw_sprite(spr_icon_lock, 1, x, y + (sprite_height * 0.3));
 }
+
+// Format button text.
+draw_set_font(fnt_button);
+draw_set_halign(fa_center);
+draw_set_valign(fa_middle);
+draw_set_colour(c_white);
+draw_set_alpha(1);
+
+// Draw button text.
+draw_text(x, y - (sprite_height * 0.05), string("STAGE {0}", stage));
+	
 
