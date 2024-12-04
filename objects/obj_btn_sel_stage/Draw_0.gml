@@ -8,9 +8,25 @@ draw_self();
 // Stage unlocked?
 if (!image_index) {
 	// Show blurred image.
-	var _image = global.images[global.game_level - 1, stage - 1]
+	// Image.
+	var _image = global.images[global.game_level - 1, stage - 1];
+	var _scale_width = button_image_width / sprite_get_width(_image);
+	var _scale_height = button_image_height / sprite_get_height(_image);
+	var _scale_x = max(_scale_width, _scale_height);
+	var _scale_y = max(_scale_width, _scale_height);
+
+	// Resize image.
+	var _surf = surface_create(button_image_width, button_image_height);
+	surface_set_target(_surf);
+	draw_clear_alpha(c_black, 0);
+	draw_sprite_ext(_image, 0, button_image_width / 2, button_image_height / 2, _scale_x, _scale_y, 0, c_white, 1);
+	surface_reset_target();
+	_image = sprite_create_from_surface(_surf, 0, 0, button_image_width, button_image_height, false, false, button_image_width / 2, button_image_height / 2);
+	surface_free(_surf);
+	
+	// Blur image.
 	shader_set(sh_blur);
-	shader_set_uniform_f(shader_get_uniform(sh_blur,"size"), sprite_get_width(_image), sprite_get_height(_image), 5);
+	shader_set_uniform_f(shader_get_uniform(sh_blur,"size"), sprite_get_width(_image), sprite_get_height(_image), 50);
 	draw_sprite(_image, 0, x, y);
 	shader_reset();
 

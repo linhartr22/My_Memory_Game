@@ -38,7 +38,13 @@ if (tiles_remaining == 0) {
 	var _msg = "Press back when done viewing.";
 	var _x = room_width - (room_width * 0.04) - 400;
 	var _y = room_height * 0.4;
+	// Next level unlocked?
+	if (!global.locked_levels[global.game_level]) {
+		// Draw hint text.
+		var _msg = string("{0}\n\nYou unlocked Level {1}!", _msg, global.game_level + 1);
+	}
 	draw_text_ext(_x, _y, _msg, string_height("Stage"), 400);
+
 }
 
 // Draw puzzle frame.

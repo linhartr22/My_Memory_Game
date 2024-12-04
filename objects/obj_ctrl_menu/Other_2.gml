@@ -6,10 +6,10 @@ global.audio_volume = 0.5;
 audio_set_master_gain(0, global.audio_volume);
 
 // Enable music.
-global.play_music = false;
+global.play_music = true;
 
 // Clear score.
-score = 0;
+global.score = 0;
 
 // Game progress.
 global.game_level = 0;
