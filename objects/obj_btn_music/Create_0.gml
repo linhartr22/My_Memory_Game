@@ -5,3 +5,6 @@ image_speed = false;
 // Button sprite.
 button_sprite = spr_icon_mute;
 
+// Enable music.
+global.play_music = true;
+

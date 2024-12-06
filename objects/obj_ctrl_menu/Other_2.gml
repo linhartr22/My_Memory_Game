@@ -3,9 +3,6 @@
 global.audio_volume = 0.5;
 audio_set_master_gain(0, global.audio_volume);
 
-// Enable music.
-global.play_music = true;
-
 // Clear score.
 global.score = 0;
 
@@ -53,4 +50,24 @@ global.images = [
 
 // Stage time limits.
 global.stage_time_limit = [20, 35, 50, 70];
+
+// Stage high scores.
+global.stage_high_score = [
+	[0, 0, 0, 0],
+	[0, 0, 0, 0],
+	[0, 0, 0, 0],
+	[0, 0, 0, 0],
+	[0, 0, 0, 0],
+	[0, 0, 0, 0]
+];
+/*
+global.stage_high_score = [
+	[100, 25, 0, 0],
+	[0, 0, 0, 0],
+	[0, 0, 0, 0],
+	[0, 0, 0, 0],
+	[0, 0, 0, 0],
+	[0, 0, 0, 0]
+];
+*/
 

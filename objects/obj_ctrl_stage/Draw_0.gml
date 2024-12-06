@@ -1,24 +1,23 @@
 /// @description Display Level.
 // Format score text.
-draw_set_font(fnt_button);
+draw_set_font(fnt_score);
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 draw_set_colour(c_white);
 draw_set_alpha(1);
 
 // Draw score text.
-var _x = room_width * 0.75;
-var _y = room_height * 0.1;
-var _s = string_replace_all(string_format(global.score, 4, 0), " ", "0");
-var _t = string_replace_all(string_format(global.timer_count, 2, 1), " ", "0");
-draw_text(_x, _y, string("Score: {0}", _s));
+var _x = room_width * 0.73;
+var _y = room_height * 0.125;
+var _s = global.stage_high_score[global.game_level, global.game_stage];
+_s = string_replace_all(string_format(_s, 6, 0), " ", "0");
+draw_text(_x, _y, string("HI-SCORE\n{0}", _s));
 
 // Draw timer text.
-var _x = room_width * 0.75;
-var _y = room_height * 0.2;
-var _s = string_replace_all(string_format(global.score, 4, 0), " ", "0");
-var _t = string_replace_all(string_format(global.timer_count, 2, 1), " ", "0");
-draw_text(_x, _y, string("Timer: {0}", _t));
+var _y = room_height * 0.27;
+var _t = floor(global.timer_count * 10) / 10;
+_t = string_replace_all(string_format(_t, 2, 1), " ", "0");
+draw_text(_x, _y, string("TIMER {0}", _t));
 
 // Format level text.
 draw_set_font(fnt_medium);

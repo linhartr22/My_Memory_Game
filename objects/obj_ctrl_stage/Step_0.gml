@@ -12,7 +12,9 @@ tiles_remaining = _tiles_remaining;
 if (tiles_remaining == 0 && !global.button_disable) {
 	// No, Update Score.
 	global.timer_start = false;
-	global.score += floor(global.timer_count * 10);
+	var _hs = global.stage_high_score[global.game_level, global.game_stage]
+	global.stage_high_score[global.game_level, global.game_stage] = 
+		max(_hs, floor(global.timer_count * 10));
 	
 	// Play winner sound.
 	audio_play_sound(snd_match_big, 0, false);

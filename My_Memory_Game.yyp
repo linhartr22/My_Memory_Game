@@ -65,6 +65,7 @@
     {"id":{"name":"rm_level","path":"rooms/rm_level/rm_level.yy",},},
     {"id":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
     {"id":{"name":"rm_stage","path":"rooms/rm_stage/rm_stage.yy",},},
+    {"id":{"name":"scr_scripts","path":"scripts/scr_scripts/scr_scripts.yy",},},
     {"id":{"name":"sh_blur","path":"shaders/sh_blur/sh_blur.yy",},},
     {"id":{"name":"snd_btn_error","path":"sounds/snd_btn_error/snd_btn_error.yy",},},
     {"id":{"name":"snd_match_big","path":"sounds/snd_match_big/snd_match_big.yy",},},

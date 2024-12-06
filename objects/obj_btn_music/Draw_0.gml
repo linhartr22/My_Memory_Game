@@ -3,5 +3,5 @@
 draw_self();
 
 // Draw button sprite.
-draw_sprite(button_sprite, global.play_music, x, y - (sprite_height * 0.05));	// Ignore feather.
+draw_sprite(button_sprite, global.play_music, x, y - (sprite_height * 0.05));	// IGNORE FEATHER!
 
