@@ -1,4 +1,13 @@
 /// @description Display Save Slot Button.
+// Buttons disabled?
+if (global.button_disable) {
+	// Yes, Show save slot buttons.
+	image_alpha = 1.0;
+} else {
+	// No, Hide save slot buttons.
+	image_alpha = 0.2;
+}
+
 // Draw button base.
 draw_self();
 

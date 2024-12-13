@@ -1,4 +1,4 @@
-/// @description Load Game Button Left Mouse Released.
+/// @description Saved Games Button Left Mouse Released.
 // Was button pressed?
 if (image_index) {
 	// Yes, disable load & save buttons. Enable memory slot buttons.

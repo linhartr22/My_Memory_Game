@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"Level 3",
-    "path":"folders/Sprites/Level 3.yy",
+    "path":"folders/Sprites/Levels/Level 3.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -1,4 +1,4 @@
-/// @description Load Game Button Left Mouse Pressed.
+/// @description Saved Games Button Left Mouse Pressed.
 // Button pressed?
 if (!global.button_disable) {
 	// Yes, Set button to pressed.

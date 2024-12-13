@@ -1,4 +1,13 @@
-/// @description Display Save Slot Button.
+/// @description Display Saved Games Button.
+// Buttons disabled?
+if (global.button_disable) {
+	// Yes, Hide save slot buttons.
+	image_alpha = 0.2;
+} else {
+	// No, Show save slot buttons.
+	image_alpha = 1.0;
+}
+
 // Draw button base.
 draw_self();
 
@@ -10,5 +19,5 @@ draw_set_colour(c_white);
 draw_set_alpha(1);
 
 // Draw button text.
-draw_text(x, y - (sprite_height * 0.05), "LOAD");
+draw_text(x, y - (sprite_height * 0.05), mode);
 
