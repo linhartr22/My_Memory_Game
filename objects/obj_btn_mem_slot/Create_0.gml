@@ -3,6 +3,5 @@
 image_speed = false;
 
 // Button sprite.
-button_sprite = spr_icon_mute;
-
+button_sprite = false;
 

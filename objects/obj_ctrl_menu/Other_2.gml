@@ -1,7 +1,10 @@
 /// @description Menu Game Start Event.
 // Set audio volume. 
-global.audio_volume = 0.5;
-audio_set_master_gain(0, global.audio_volume);
+audio_set_master_gain(0, 0.5);
+
+// Music.
+global.play_music = true;
+global.music = snd_music_menu;
 
 // Clear score.
 global.score = 0;

@@ -1,4 +1,4 @@
-/// @description Level Button.
+/// @description Level Button Setup.
 // Disable sprite animation.
 image_speed = false;
 

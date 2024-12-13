@@ -1,11 +1,12 @@
 /// @description Menu Room Start Event.
 // Play menu music.
-global.music = snd_music_menu
+var _music = snd_music_menu;
 if (global.play_music) {
-	audio_play_sound(global.music, 0, true);
-	audio_sound_gain(global.music, 0, 0);
-	audio_sound_gain(global.music, 1, 500);
+	audio_stop_sound(global.music);
+	audio_play_sound(_music, 0, true);
+	audio_sound_gain(_music, true, 500);
 }
+global.music = _music;
 
 // Level buttons.
 #macro LVL_BTN_OFS_X 0

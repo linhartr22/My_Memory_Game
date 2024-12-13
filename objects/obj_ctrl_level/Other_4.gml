@@ -1,11 +1,12 @@
 /// @description Room Start Event.
 // Play game music.
-global.music = snd_music_level
+var _music = snd_music_level
 if (global.play_music) {
-	audio_play_sound(global.music, 0, true);
-	audio_sound_gain(global.music, 0, 0);
-	audio_sound_gain(global.music, 1, 500);
+	audio_stop_sound(global.music);
+	audio_play_sound(_music, 0, true);
+	audio_sound_gain(_music, 1, 500);
 }
+global.music = _music;
 
 // Set stage select.
 stage_select = true;
