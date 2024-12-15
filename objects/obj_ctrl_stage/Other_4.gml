@@ -65,5 +65,5 @@ for (var _row = 0; _row < global.puzzle_rows; _row++) {
 global.is_tile_selected = false;
 
 // Clear buttons disabled state.
-global.button_disable = false;
+global.buttons_locked = false;
 

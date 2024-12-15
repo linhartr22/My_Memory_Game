@@ -1,6 +1,6 @@
 /// @description Quit Button Left Click Pressed.
 // Quit button already pressed?
-if (!global.button_disable) {
+if (!global.buttons_locked) {
 	// No, Set quit button pressed.
 	image_index = true;
 

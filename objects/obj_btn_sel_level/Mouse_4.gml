@@ -1,6 +1,6 @@
 /// @description Level Button Left Mouse Pressed.
 // Button pressed?
-if (!global.button_disable && !global.locked_levels[level - 1]) {
+if (!global.buttons_locked && !global.locked_levels[level - 1]) {
 	// Yes, Set button to pressed.
 	image_index = true;
 

@@ -14,5 +14,5 @@ if (global.tile_to_match == match) {
 	
 // Set tile is not selected state.
 global.is_tile_selected = false;
-global.button_disable = false;
+global.buttons_locked = false;
 

@@ -1,6 +1,6 @@
 /// @description Tile Button Left Mouse Pressed.
 // Are buttons locked?
-if (global.button_disable) {
+if (global.buttons_locked) {
 	// Yes, Exit.
 	exit;
 }
@@ -34,7 +34,7 @@ if (!global.is_tile_selected) {
 	global.tile_to_match_id = id;
 } else {
 	// Yes, Disable Buttons.
-	global.button_disable = true;
+	global.buttons_locked = true;
 	
 	// Delay to view result
 	alarm_set(0, 30);

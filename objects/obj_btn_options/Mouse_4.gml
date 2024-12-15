@@ -1,6 +1,6 @@
 /// @description Options Button Left Mouse Pressed.
 // Button pressed?
-if (!global.button_disable) {
+if (!global.buttons_locked) {
 	// Yes, Set button to pressed.
 	image_index = true;
 

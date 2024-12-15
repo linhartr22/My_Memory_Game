@@ -9,30 +9,35 @@ with (obj_btn_tile) {
 tiles_remaining = _tiles_remaining;
 
 // Uncovered tiles remain?
-if (tiles_remaining == 0 && !global.button_disable) {
+if (tiles_remaining == 0 && !global.buttons_locked) {
 	// No, Update Score.
 	global.timer_start = false;
-	var _hs = global.stage_high_score[global.game_level, global.game_stage]
-	global.stage_high_score[global.game_level, global.game_stage] = 
+	var _hs = global.stage_high_score[global.game_level - 1, global.game_stage - 1]
+	global.stage_high_score[global.game_level - 1, global.game_stage - 1] = 
 		max(_hs, floor(global.timer_count * 10));
 	
 	// Play winner sound.
 	audio_play_sound(snd_match_big, 0, false);
 	
 	// Enable buttons.
-	global.button_disable = true;
+	global.buttons_locked = true;
 	
 	// Last stage of level?
 	if (global.game_stage == global.stages_cnt) {
-		// Yes.
-		global.locked_levels[global.game_level] = false;
-		global.locked_stages[global.game_level, 0] = false;
+		// Yes, Last level?
+		if (global.game_level != global.levels_cnt) {
+			// No, Unlock next level and its first stage.
+			global.locked_levels[global.game_level] = false;
+			global.locked_stages[global.game_level, 0] = false;
+		}
 	} else {
 		// No, Unlock next stage.
 		global.locked_stages[global.game_level - 1, global.game_stage] = false;
 	}
 } else {
+	// Timer running?
 	if (global.timer_start) {
+		// Yes, Decrement timer.
 		global.timer_count = max(global.timer_count - (1 / 30), 0);
 	}
 }

@@ -3,7 +3,8 @@
 if (image_index) {
 	// Toggle play music state.
 	global.play_music = !global.play_music;
-	audio_sound_gain(global.music, global.play_music, 500); // Ignore feather.
+	/// Feather ignore once GM1041
+	audio_sound_gain(global.music, global.play_music, 500);
 
 	// Music button released.
 	image_index = false;

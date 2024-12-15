@@ -9,5 +9,5 @@ button_sound = snd_music_exit;
 button_text = "QUIT";
 
 // Disable button clicks.
-global.button_disable = false;
+global.buttons_locked = false;
 

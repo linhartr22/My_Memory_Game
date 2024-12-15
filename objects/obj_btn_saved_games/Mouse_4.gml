@@ -1,6 +1,6 @@
 /// @description Saved Games Button Left Mouse Pressed.
-// Button pressed?
-if (!global.button_disable) {
+// Button enabled?
+if (global.button_save_game_pressed == "") {
 	// Yes, Set button to pressed.
 	image_index = true;
 

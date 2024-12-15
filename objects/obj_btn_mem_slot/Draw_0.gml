@@ -1,10 +1,11 @@
-/// @description Display Save Slot Button.
-// Buttons disabled?
-if (global.button_disable) {
-	// Yes, Show save slot buttons.
+/// @description Display Saved Games Memory Slot Button.
+// Button enabled?
+if ((global.button_save_game_pressed != "") && 
+	((global.button_mem_slot_pressed == 0) || (global.button_mem_slot_pressed == mem_slot))) {
+	// Yes, Show memory slot button.
 	image_alpha = 1.0;
 } else {
-	// No, Hide save slot buttons.
+	// No, Hide memory slot button.
 	image_alpha = 0.2;
 }
 
@@ -19,5 +20,5 @@ draw_set_colour(c_white);
 draw_set_alpha(1);
 
 // Draw button text.
-draw_text(x, y - (sprite_height * 0.05), string(mem_slot, 1, 0));
+draw_text(x, y - (sprite_height * 0.05), string_format(mem_slot, 1, 0));
 

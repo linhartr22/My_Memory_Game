@@ -1,4 +1,4 @@
-/// @description Music Button Setup.
+/// @description Saved Games Memory Slot Button Setup.
 // Disable sprite animation.
 image_speed = false;
 
