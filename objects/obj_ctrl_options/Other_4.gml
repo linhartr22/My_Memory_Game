@@ -11,4 +11,3 @@ global.music = _music;
 // Enable saved game buttons. Disable memory slot buttons.
 global.button_save_game_pressed = "";
 global.button_mem_slot_pressed = 0;
-

@@ -1,11 +1,14 @@
 /// @description Display Saved Games Button.
 // Button enabled?
 if (global.button_save_game_pressed == "") {
-	// Yes, Show save game button.
+	// Yes, Show saved games button.
 	image_alpha = 1.0;
 } else {
-	// No, Hide save game button.
-	image_alpha = 1.0;
+	// No, Was this button pressed?
+	if (global.button_save_game_pressed != button_text)  {
+		// No, Hide saved games button.
+		image_alpha = 0.2;
+	}
 }
 
 // Draw button base.
@@ -19,10 +22,5 @@ draw_set_colour(c_white);
 draw_set_alpha(1);
 
 // Draw button text.
-draw_text(x, y - (sprite_height * 0.05), button_label);
+draw_text(x, y - (sprite_height * 0.05), button_text);
 
-// Draw arrow right sprite?
-if (global.button_save_game_pressed == button_label) {
-	var _arrow_x = x - (sprite_width * 0.6);
-	draw_sprite(spr_arrow_right, arrow_index, _arrow_x, y);
-}

@@ -3,11 +3,15 @@
 if (image_index) {
 	// Yes, Was it LOAD?
 	if (global.button_save_game_pressed == "LOAD") {
-		// Yes, Load game.
-		
+		// Yes, Load saved game.
+		global.locked_levels = scr_array_read(global.locked_levels, "locked_levels", global.button_mem_slot_pressed);
+		global.locked_stages = scr_array_read(global.locked_stages, "locked_stages", global.button_mem_slot_pressed);
+		global.stage_high_score = scr_array_read(global.stage_high_score, "stage_high_score", global.button_mem_slot_pressed);
 	} else {
 		// No, Save game.
-		
+		scr_array_write(global.locked_levels, "locked_levels", global.button_mem_slot_pressed);
+		scr_array_write(global.locked_stages, "locked_stages", global.button_mem_slot_pressed);
+		scr_array_write(global.stage_high_score, "stage_high_score", global.button_mem_slot_pressed);		
 	}
 	
 	// Disable saved game buttons. Enable memory slot buttons.

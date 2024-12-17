@@ -7,7 +7,6 @@ if (global.buttons_locked) {
 
 // Set start timer state.
 if (!global.timer_start) {
-	show_debug_message("Tile Button Left Mouse Pressed started timer.");
 	global.timer_start = true;
 }
 

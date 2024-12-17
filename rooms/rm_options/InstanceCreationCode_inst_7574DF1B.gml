@@ -1,4 +1,4 @@
 /// @description Save Game Button Creation Code.
 // Set button mode to save.
-button_label = "SAVE";
+button_text = "SAVE";
 

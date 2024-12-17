@@ -3,8 +3,8 @@
 audio_set_master_gain(0, 0.5);
 
 // Music.
-//global.play_music = true;
-global.play_music = false;
+global.play_music = true;
+//global.play_music = false;
 global.music = snd_music_menu;
 
 // Locked levels.
@@ -52,3 +52,10 @@ global.game_stage = 0;
 // Stage time limits.
 global.stage_time_limit = [20, 35, 50, 90];
 
+// Create any missing saved game files.
+global.mem_slot_cnt = 3;
+for (var _ms = 1; _ms <= 3; _ms++) {
+	scr_array_init(global.locked_levels, "locked_levels", _ms);
+	scr_array_init(global.locked_stages, "locked_stages", _ms);
+	scr_array_init(global.stage_high_score, "stage_high_score", _ms);
+}
