@@ -3,7 +3,7 @@
 var _music = snd_music_options
 if (global.play_music) {
 	audio_stop_sound(global.music);
-	audio_play_sound(_music, 0, true);
+	audio_play_sound(_music, 0, true, global.vol_music_gain);
 	audio_sound_gain(_music, 1, 500);
 }
 global.music = _music;

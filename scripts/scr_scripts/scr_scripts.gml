@@ -45,3 +45,18 @@ function scr_array_read(_array, _array_name, _slot) {
     return _array;
 }
 
+// Write to ini file.
+function scr_ini_write(_section, _key, _value) {
+	ini_open("settings.ini");
+	ini_write_real(_section, _key, _value);
+	ini_close();
+}
+
+// Read from ini file.
+function scr_ini_read(_section, _key, _value) {
+	ini_open("settings.ini");
+	var _tmp = ini_read_real(_section, _key, _value);
+	ini_close();
+	return _tmp
+}
+

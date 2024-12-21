@@ -10,6 +10,5 @@ draw_set_colour(c_white);
 draw_set_alpha(1);
 
 // Draw button text.
-//draw_text(x, y - (sprite_height * 0.05), string(button_text));
 draw_text(x, y - (sprite_height * 0.05), button_text);
 

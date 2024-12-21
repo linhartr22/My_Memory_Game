@@ -13,7 +13,7 @@ if (!global.timer_start) {
 // Has this tile been selected?
 if (image_index > 0) {
 	// Yes, Play error sound
-	audio_play_sound(snd_btn_error, 0, false);
+	audio_play_sound(snd_btn_error, 0, false, global.vol_effects_gain);
 	exit
 }
 
@@ -21,7 +21,7 @@ if (image_index > 0) {
 image_index = match + 2
 
 // Play clicked sound.
-audio_play_sound(snd_ui_click, 0, false);
+audio_play_sound(snd_ui_click, 0, false, global.vol_effects_gain);
 	
 // Has any tile been selected?
 if (!global.is_tile_selected) {

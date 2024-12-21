@@ -3,5 +3,5 @@
 image_index = true;
 
 // Play clicked sound.
-audio_play_sound(snd_ui_click, 0, false);	
+audio_play_sound(snd_ui_click, 0, false, global.vol_effects_gain);	
 

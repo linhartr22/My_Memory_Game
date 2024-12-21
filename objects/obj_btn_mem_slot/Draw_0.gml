@@ -20,5 +20,6 @@ draw_set_colour(c_white);
 draw_set_alpha(1);
 
 // Draw button text.
+/// Feather ignore once GM1041
 draw_text(x, y - (sprite_height * 0.05), string_format(mem_slot, 1, 0));
 

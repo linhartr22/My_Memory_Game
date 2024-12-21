@@ -10,7 +10,7 @@ if (!global.buttons_locked) {
 		audio_stop_sound(global.music);
 	
 		// Play game exit sound. Wait for sound to end.
-		audio_play_sound(button_sound,0,false);
+		audio_play_sound(button_sound, 0, false, global.vol_effects_gain);
 	}
 }
 

@@ -17,7 +17,7 @@ if (tiles_remaining == 0 && !global.buttons_locked) {
 		max(_hs, floor(global.timer_count * 10));
 	
 	// Play winner sound.
-	audio_play_sound(snd_match_big, 0, false);
+	audio_play_sound(snd_match_big, 0, false, global.vol_effects_gain);
 	
 	// Enable buttons.
 	global.buttons_locked = true;

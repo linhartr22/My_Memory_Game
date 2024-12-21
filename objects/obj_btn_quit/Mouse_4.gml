@@ -5,6 +5,6 @@ if (!global.buttons_locked) {
 	image_index = true;
 
 	// Play click sound.
-	audio_play_sound(snd_ui_close,0,false);	
+	audio_play_sound(snd_ui_close, 0, false, global.vol_effects_gain);	
 }
 

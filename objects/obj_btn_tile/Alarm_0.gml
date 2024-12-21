@@ -4,12 +4,12 @@ if (global.tile_to_match == match) {
 	// Yes, Set both tiles to clear.
 	image_index = true;
 	global.tile_to_match_id.image_index = true;
-	audio_play_sound(snd_match_small, 0, false);
+	audio_play_sound(snd_match_small, 0, false, global.vol_effects_gain);
 } else {
 	// No, Set both tiles to not pressed.
 	image_index = false;
 	global.tile_to_match_id.image_index = false;
-	audio_play_sound(snd_btn_error, 0, false);
+	audio_play_sound(snd_btn_error, 0, false, global.vol_effects_gain);
 }
 	
 // Set tile is not selected state.
