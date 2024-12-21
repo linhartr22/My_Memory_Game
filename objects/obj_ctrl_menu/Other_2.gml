@@ -1,4 +1,7 @@
 /// @description Menu Game Start Event.
+// Display size.
+global.display_full = window_get_fullscreen();
+
 // Volume gains.
 global.gain = [0.075, 0.2, 0.5, 1];
 global.gain_steps = array_length(global.gain);
